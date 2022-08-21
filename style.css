@@ -1,0 +1,17 @@
+#clr-container {
+    border: solid 2px red;   
+    display: flex;
+    height: 80vh;
+   width: 70%;
+}
+
+ input {
+    width: 30px;
+ }
+
+#clr-column {
+    border: pink solid 1px;
+    width: 60px;
+    
+}
+

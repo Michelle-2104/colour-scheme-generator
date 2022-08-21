@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Colour-scheme-Generator</title>
 </head>
 <body>
 <h2>Colour Scheme Generator</h2>
   <div top-sec>
-     <input type="colour">
-     <select>
+     <input id="colour-input" type="colour">
+     <select id="scheme-input">
         <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome Dark</option>
             <option value="monochrome-light">Monochrome Light</option>
@@ -25,33 +26,30 @@
   </div>  
   <hr>
 
-  <div>
-    <div id="col-1"></div>
-    <div><p id="hex-1"></p></div>
+  <section id="clr-container">
+  <div id="clr-column" class="clr-1">
+     <p id="hex-col"></p>
   </div>
 
-  <div>
-    <div id="col-2"></div>
-    <div><p id="hex-2"></p></div>
+  <div id="clr-column"class="clr-2">
+    <p id="hex-col"> </p>
   </div>
 
-  <div>
-    <div id="col-3"></div>
-    <div><p id="hex-3"></p></div>
+  <div id="clr-column"class="clr-3">
+    <p id="hex-col"> </p>
   </div>
 
-  <div>
-    <div id="col-4"></div>
-    <div><p id="hex-4"></p></div>
+  <div id="clr-column"class="clr-4">
+    <p id="hex-col"> </p>
   </div>
 
-  <div>
-    <div id="col-5"></div>
-    <div><p id="hex-5"></p></div>
+  <div id="clr-column"class="clr-5">
+    <p id="hex-col"> </p>
   </div>
 
+</section>
+  
 
-
-
+<script src="main.js"></script>
 </body>
 </html>
