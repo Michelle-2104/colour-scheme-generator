@@ -8,47 +8,43 @@
     <title>Colour-scheme-Generator</title>
 </head>
 <body>
-<h2>Colour Scheme Generator</h2>
-  <div top-sec>
-     <input id="colour-input" type="colour">
-     <select id="scheme-input">
+  <div class="top-bit">
+    <input id="colour-input" type="color" value="#F55A5A">
+    <select id="scheme-input" class="button">
         <option value="monochrome">Monochrome</option>
-            <option value="monochrome-dark">Monochrome Dark</option>
-            <option value="monochrome-light">Monochrome Light</option>
-            <option value="analogic">Analogic</option>
-            <option value="complement">Complement</option>
-            <option value="analogic-complement">Analogic Complement</option>
-            <option value="triad">Triad</option>
-            <option value="quad">Quad</option>
-        
+        <option value="monochrome-dark">Monochrome Dark</option>
+        <option value="monochrome-light">Monochrome Light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic Complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
     </select>
-    <button id="get-colour-btn">Get colour</button>
-  </div>  
-  <hr>
-
-  <section id="clr-container">
-  <div id="clr-column" class="clr-1">
-     <p id="hex-col"></p>
-  </div>
-
-  <div id="clr-column"class="clr-2">
-    <p id="hex-col"> </p>
-  </div>
-
-  <div id="clr-column"class="clr-3">
-    <p id="hex-col"> </p>
-  </div>
-
-  <div id="clr-column"class="clr-4">
-    <p id="hex-col"> </p>
-  </div>
-
-  <div id="clr-column"class="clr-5">
-    <p id="hex-col"> </p>
-  </div>
-
-</section>
-  
+    <button id="colour-button" class="button pointer">Get colour scheme</button>
+</div>
+<hr>
+<div id="col-array" class="row">
+    <div id="c-1" class="column fill">
+        <div id="cl-1" class="colour-show"></div>
+        <div id="hex-1" class="hex-show"><p>#FB5252</p></div>
+    </div>
+    <div id="c-2" class="column fill">
+        <div id="cl-2" class="colour-show"></div>
+        <div id="hex-2" class="hex-show"><p>#FC8856</p></div>
+    </div>
+    <div id="c-3" class="column fill">
+        <div id="cl-3" class="colour-show"></div>
+        <div id="hex-3" class="hex-show"><p>#FCBB5A</p></div>
+    </div>
+    <div id="c-4" class="column fill">
+        <div id="cl-4" class="colour-show"></div>
+        <div id="hex-4" class="hex-show"><p>#FDED5E</p></div>
+    </div>
+    <div id="c-5" class="column fill">
+        <div id="cl-5" class="colour-show"></div>
+        <div id="hex-5" class="hex-show"><p>#DFFE62</p></div>
+    </div>
+</div>
 
 <script src="main.js"></script>
 </body>
